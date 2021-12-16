@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "App",
   data() {
@@ -14,6 +16,17 @@ export default {
       title: "“青年大学习”第十二季第十一期",
       dxx: "https://h5.cyol.com/special/daxuexi/bsz1fk1u3w/images/end.jpg",
     };
+  },
+  mounted() {
+    // var urlPattern = /<li>.*<a href="(https.*?\.html)"/g
+    axios
+      .get('http://news.cyol.com/gb/channels/vrGlAKDl/index.html')
+      .then((resp) => {
+        console.log(resp.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   },
   metaInfo() {
     return {
