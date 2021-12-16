@@ -21,8 +21,13 @@ func Resp(StatusCode int, Body string) (*events.APIGatewayProxyResponse, error) 
 func httpHandler(method, urlVal string) (bool, string) {
 	client := &http.Client{}
 	var req *http.Request
- 
+
 	req, _ = http.NewRequest(method, urlVal, nil)
+	req.Header.Set("User-Agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")
+	req.Header.Set("Referer", "http://news.cyol.com/")
+	req.Header.Set("Host", "m.cyol.com")
+	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
+	
 	resp, err := client.Do(req)
  
 	if err != nil {
