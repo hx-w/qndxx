@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
   name: "App",
   data() {
@@ -19,8 +17,7 @@ export default {
   },
   mounted() {
     // var urlPattern = /<li>.*<a href="(https.*?\.html)"/g
-    axios
-      .get('http://news.cyol.com/gb/channels/vrGlAKDl/index.html')
+    this.$jsonp('http://news.cyol.com/gb/channels/vrGlAKDl/index.html')
       .then((resp) => {
         console.log(resp.data)
       })

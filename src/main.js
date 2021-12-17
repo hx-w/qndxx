@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueMeta from 'vue-meta'
-import axios from 'axios'
+import { VueJsonp } from 'vue-jsonp'
 
 Vue.use(VueMeta, {
   refreshOnceOnNavigation: true
 })
+Vue.use(VueJsonp)
 
-Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 new Vue({
