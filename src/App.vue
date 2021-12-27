@@ -11,8 +11,8 @@ export default {
   name: "App",
   data() {
     return {
-      title: "“青年大学习”第十二季第十二期",
-      dxx: 'https://h5.cyol.com/special/daxuexi/bd1kh2uw0m/images/end.jpg'
+      title: "“青年大学习”第十二季第十三期",
+      dxx: 'https://h5.cyol.com/special/daxuexi/bf1avt2y7q/images/end.jpg'
     };
   },
   mounted() {
