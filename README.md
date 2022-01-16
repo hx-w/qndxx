@@ -10,7 +10,7 @@
 
 **效果**
 
-![demo](https://ibed.csgowiki.top/image/20220116162200.png]
+![demo](https://ibed.csgowiki.top/image/20220116162200.png)
 
 ## Website support
 
