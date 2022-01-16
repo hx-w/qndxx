@@ -14,7 +14,7 @@
 
 **效果**
 
-<img src="https://ibed.csgowiki.top/image/20220116162200.png" align="left" alt="demo" style="zoom:33%;" />
+<img src="https://ibed.csgowiki.top/image/20220116162200.png" align="left" alt="demo" style="zoom:10%;" />
 
 
 
