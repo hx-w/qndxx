@@ -7,20 +7,22 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "App",
   data() {
     return {
       api_endpoint: 'https://service-0wsl5m13-1256946954.cd.apigw.tencentcs.com/release/qndxx',
-      title: "“青年大学习”第十二季第十四期",
-      dxx: 'https://h5.cyol.com/special/daxuexi/bg1cup0t3k/images/end.jpg'
+      title: "正在获取title...",
+      dxx: '正在获取img...'
     };
   },
   mounted() {
-    // var urlPattern = /<li>.*<a href="(https.*?\.html)"/g
-    this.$jsonp(this.api_endpoint)
+    axios
+      .get(this.api_endpoint)
       .then((resp) => {
-        console.log(resp.data)
+        this.title = resp.data.title
+        this.dxx = resp.data.dxx_img
       })
       .catch((err) => {
         console.log(err)
