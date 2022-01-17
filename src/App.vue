@@ -13,8 +13,8 @@ export default {
   data() {
     return {
       api_endpoint: 'https://service-0wsl5m13-1256946954.cd.apigw.tencentcs.com/release/qndxx',
-      title: "正在获取title...",
-      dxx: '正在获取img...'
+      title: "正在请求数据...",
+      dxx: '正在获取图片...'
     };
   },
   mounted() {
