@@ -10,6 +10,8 @@
 2. 在微信中点开指定链接
 3. 截图
 
+> 站点部署在netlify平台上，第一次访问速度会较慢请耐心等待。
+
 ## 站点 | Website
 
 - [x] [**qndxx.scubot.live**](https://qndxx.scubot.live)
