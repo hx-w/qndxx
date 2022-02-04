@@ -19,6 +19,3 @@
 
 > 微信可能封禁部分域名，不定期更新有效站点。
 
-## 效果展示 | Demo
-
-<img src="https://ibed.csgowiki.top/image/20220116162200.png" align="left" alt="demo" style="zoom:10%;" />
