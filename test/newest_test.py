@@ -6,7 +6,7 @@ import requests
 
 def test():
     base_url = 'http://news.cyol.com/gb/channels/vrGlAKDl/index.html'
-    pattern = re.compile('<li>.*<a href="(https.*?\.html)"')
+    pattern = re.compile('<li>.*<a href="(http.*?\.html)"')
     resp = requests.get(base_url)
     assert resp.status_code == 200
     res = re.findall(pattern, resp.content.decode('utf-8'))
