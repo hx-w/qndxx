@@ -14,7 +14,6 @@
 
 ## 站点 | Website
 
-- [x] [**qndxx.scubot.live**](https://qndxx.scubot.live)
 - [x] [**dxx.hx-w.top**](https://dxx.hx-w.top)
 
 > 微信可能封禁部分域名，不定期更新有效站点。
