@@ -16,7 +16,7 @@
 
 ## 站点 | Website
 
-- [x] [**dxx.hx-w.top**](https://dxx.hx-w.top)
+- [x] [**qndxx.netlify.app**](https://qndxx.netlify.app)
 - [x] [**dxx.haha44444.top**](https://dxx.haha44444.top)
 - [x] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
 
