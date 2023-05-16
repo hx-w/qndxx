@@ -9,7 +9,7 @@
 
 > 可靠的做法是点开大学习后立马关闭，在后台就已经留有观看记录，如果需要的话再通过该库获得截图。
 
-## 快速开始 | Quick start
+## 快速开始 | Quick Start
 
 1. 打开手机微信
 2. 在微信中点开指定链接
@@ -26,3 +26,15 @@
 
 > 微信可能封禁部分域名，不定期更新有效站点。
 
+
+## 部署 | Deploy
+
+**Vercel**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhx-w%2Fqndxx&project-name=qndxx&repository-name=qndxx)
+
+第一次部署应该会失败，需要手动在vercel project setting下将Node.Js Version 版本设置为`16.x`，再重新部署即可。
+
+**Netlify**
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hx-w/qndxx)
