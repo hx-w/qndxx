@@ -1,7 +1,7 @@
 # 青年大学习skip
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/93a7e121-af8d-46d0-9019-32b69ba447d6/deploy-status)](https://app.netlify.com/sites/qndxx/deploys)
-![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/hx-w/qndxx)
+[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/hx-w/qndxx)](https://vercel.com/hx-w/qndxx)
 
 **该项目旨在应付每周学生的青年大学习检查，以便节省你一周大约10分钟的时间和1%的手机电量。**
 
