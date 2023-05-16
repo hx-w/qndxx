@@ -20,7 +20,7 @@
 ## 站点 | Website
 
 - [x] [**qndxx.netlify.app**](https://qndxx.netlify.app)
-- [ ] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)
+- [x] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)
 - [x] [**dxx.haha44444.top**](https://dxx.haha44444.top)
 - [x] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
 
