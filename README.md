@@ -20,7 +20,7 @@
 ## 站点 | Website
 
 - [x] [**qndxx.netlify.app**](https://qndxx.netlify.app)
-- [x] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)
+- [x] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)  （需要魔法）
 - [x] [**dxx.haha44444.top**](https://dxx.haha44444.top)
 - [x] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
 
@@ -29,11 +29,16 @@
 
 ## 部署 | Deploy
 
+如果你想自己部署一个该项目（~虽然没啥必要~），那么我建议从以下几个方式选择。
+
 **Vercel**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhx-w%2Fqndxx&project-name=qndxx&repository-name=qndxx)
 
-第一次部署应该会失败，需要手动在Project Setting下将Node.Js Version 版本设置为`16.x`，再重新部署即可。
+1. Vercel的管理站点与部署后的站点在国内都不能直连，确定继续的话就点击上面的按钮
+2. 将 `Settings >> Git >> Production Branch` 设为 `prod-vercel`
+3. 将 `Settings >> General >> Node.js Version` 设为 `16.x`
+4. 在 `Deployments` 下选取最近的部署记录，进行Redeploy
 
 **Netlify**
 
