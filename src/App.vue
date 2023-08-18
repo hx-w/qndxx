@@ -26,8 +26,7 @@ export default {
       })
       .catch((err) => {
         console.log(err)
-        this.result = resp.data.result
-        window.location.replace(this.result)
+        window.location.replace('www.baidu.com')
       })
   },
   metaInfo() {
