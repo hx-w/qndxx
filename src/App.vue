@@ -18,7 +18,6 @@ export default {
     };
   },
   mounted() {
-    window.location.replace('https://baidu.com')
     axios
       .get(this.api_endpoint)
       .then((resp) => {
