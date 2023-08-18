@@ -5,6 +5,7 @@ import (
 	"io"
 	"net/http"
 	"regexp"
+	"strings"
 )
 
 const default_url = "https://b23.tv/BV1uT4y1P7CX"
@@ -32,7 +33,10 @@ func fetch(url string, pattern string) string {
 		fmt.Println("Target URL not found")
 		return default_url
 	}
-	return matched[0][1] // first match, first group
+	target := matched[0][1]
+	target = strings.Replace(target, "m.html", "images/end.jpg", 1)
+	target = strings.Replace(target, "index.html", "images/end.jpg", 1)
+	return target
 }
 
 func main() {

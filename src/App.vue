@@ -12,21 +12,22 @@ export default {
   name: "App",
   data() {
     return {
-      api_endpoint: 'https://9966df427a59473692f15d799442f2ce.apig.ap-southeast-3.huaweicloudapis.com/qndxx',
+      api_endpoint: window.location.href + '/.netlify/functions/qndxx',
       title: "正在请求数据...",
-      dxx: '正在获取图片...'
+      result: '正在获取图片...'
     };
   },
   mounted() {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
-        this.title = resp.data.title
-        this.dxx = resp.data.dxx_img
+        this.result = resp.data.result
+        window.location.replace(this.result)
       })
       .catch((err) => {
         console.log(err)
-        window.location.replace('https://google.com')
+        this.result = resp.data.result
+        window.location.replace(this.result)
       })
   },
   metaInfo() {

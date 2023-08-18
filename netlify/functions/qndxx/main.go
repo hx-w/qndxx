@@ -5,6 +5,7 @@ import (
 	"io"
 	"net/http"
 	"regexp"
+	"strings"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -44,7 +45,11 @@ func fetch(url string, pattern string) (string, error) {
 		fmt.Println("Target URL not found")
 		return DEFAULT_URL, nil
 	}
-	return matched[0][1], nil
+	target := matched[0][1]
+	target = strings.Replace(target, "m.html", "images/end.jpg", 1)
+	target = strings.Replace(target, "index.html", "images/end.jpg", 1)
+
+	return target, nil
 }
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
