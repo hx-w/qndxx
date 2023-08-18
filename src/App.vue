@@ -2,7 +2,7 @@
   <div
     id="app"
     class="image-div"
-    :style="{ backgroundImage: 'url(' + dxx + ')' }"
+    :style="{ backgroundImage: 'url(' + result + ')' }"
   ></div>
 </template>
 
@@ -21,12 +21,11 @@ export default {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
+        this.title = "暂时无法获取标题"
         this.result = resp.data.result
-        window.location.replace(this.result)
       })
       .catch((err) => {
         console.log(err)
-        window.location.replace('www.baidu.com')
       })
   },
   metaInfo() {
