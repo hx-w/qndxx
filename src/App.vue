@@ -18,15 +18,16 @@ export default {
     };
   },
   mounted() {
-    axios
-      .get(this.api_endpoint)
-      .then((resp) => {
-        this.title = resp.data.title
-        this.dxx = resp.data.dxx_img
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+    window.location.replace('https://baidu.com')
+    // axios
+    //   .get(this.api_endpoint)
+    //   .then((resp) => {
+    //     this.title = resp.data.title
+    //     this.dxx = resp.data.dxx_img
+    //   })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
   },
   metaInfo() {
     return {
