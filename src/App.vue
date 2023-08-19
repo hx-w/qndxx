@@ -21,11 +21,8 @@ export default {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
-        console.log(this.$route.params)
-        // show all route param
-        console.log(this.$route)
-        if (this.$route.query.params['id']) {
-          this.title = '“青年大学习”' + this.$route.query.params['id']
+        if (this.$route.query.id) {
+          this.title = '“青年大学习”' + this.$route.query.id
         }
         this.result = resp.data.result
       })
