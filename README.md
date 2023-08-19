@@ -19,10 +19,13 @@
 
 ## 站点 | Website
 
-- [x] [**qndxx.netlify.app**](https://qndxx.netlify.app)
-- [x] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)  （需要魔法）
-- [x] [**dxx.haha44444.top**](https://dxx.haha44444.top)
-- [x] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
+目前暂时需要手动在url参数中输入最新一期的标题，相关进度跟进见 [Issue#13](https://github.com/hx-w/qndxx/issues/13)
+
+- [x] [**qndxx.scubot.com?id=2023年第18期**](https://qndxx.scubot.com?id=2023年第18期)
+- [ ] [**qndxx.netlify.app**](https://qndxx.netlify.app)
+- [ ] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)
+- [ ] [**dxx.haha44444.top**](https://dxx.haha44444.top)
+- [ ] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
 
 > 微信可能封禁部分域名，不定期更新有效站点。
 
