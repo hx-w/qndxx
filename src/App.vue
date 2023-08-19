@@ -11,8 +11,9 @@ import axios from 'axios';
 export default {
   name: "App",
   data() {
+    const url = window.location.href
     return {
-      api_endpoint: window.location.href + '/.netlify/functions/qndxx',
+      api_endpoint: url.split('?')[0] + '/.netlify/functions/qndxx',
       title: '请使用[?id=20xx年第xx期]的形式访问',
       result: 'https://www.example.com'
     };
