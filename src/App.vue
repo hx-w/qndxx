@@ -14,15 +14,18 @@ export default {
     return {
       api_endpoint: window.location.href + '/.netlify/functions/qndxx',
       title: '请使用[?id=20xx年第xx期]的形式访问',
-      result: 'www.example.com'
+      result: 'https://www.example.com'
     };
   },
   mounted() {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
-        if (this.$route.query.id) {
-          this.title = '“青年大学习”' + this.$route.query.id
+        console.log(this.$route.params)
+        // show all route param
+        console.log(this.$route)
+        if (this.$route.query.params['id']) {
+          this.title = '“青年大学习”' + this.$route.query.params['id']
         }
         this.result = resp.data.result
       })
