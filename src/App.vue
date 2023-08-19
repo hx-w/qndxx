@@ -13,15 +13,17 @@ export default {
   data() {
     return {
       api_endpoint: window.location.href + '/.netlify/functions/qndxx',
-      title: "正在请求数据...",
-      result: '正在获取图片...'
+      title: '请使用[?id=20xx年第xx期]的形式访问',
+      result: 'www.example.com'
     };
   },
   mounted() {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
-        this.title = "暂时无法获取标题"
+        if (this.$route.query.id) {
+          this.title = '“青年大学习”' + this.$route.query.id
+        }
         this.result = resp.data.result
       })
       .catch((err) => {
