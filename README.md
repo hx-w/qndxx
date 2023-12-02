@@ -14,13 +14,13 @@
 2. 在微信中点开指定链接
 3. 截图
 
-<table>
+<table border="0" class="table">
 <tr>
 <tl>
-<img src=https://imgbed.scubot.com/image/c1b95e78c6dd48fd53abcd245360f691.jpg />
+<img src=https://imgbed.scubot.com/image/c1b95e78c6dd48fd53abcd245360f691.jpg width=200 />
 </tl>
 <tl>
-<img src=https://imgbed.scubot.com/image/93577d4483f9729873d93c4318303247.jpg />
+<img src=https://imgbed.scubot.com/image/93577d4483f9729873d93c4318303247.jpg width=200 />
 </tl>
 </tr>
 </table>
