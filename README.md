@@ -17,10 +17,10 @@
 <table>
 <tr>
 <tl>
-![state_1](https://imgbed.scubot.com/image/c1b95e78c6dd48fd53abcd245360f691.jpg)
+<img src=https://imgbed.scubot.com/image/c1b95e78c6dd48fd53abcd245360f691.jpg />
 </tl>
 <tl>
-![state_2](https://imgbed.scubot.com/image/93577d4483f9729873d93c4318303247.jpg)
+<img src=https://imgbed.scubot.com/image/93577d4483f9729873d93c4318303247.jpg />
 </tl>
 </tr>
 </table>
