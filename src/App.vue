@@ -2,8 +2,14 @@
   <div
     id="app"
     class="image-div"
-    :style="{ backgroundImage: 'url(' + dxx + ')' }"
-  ></div>
+    :style="{ backgroundImage: 'url(' + result + ')' }"
+  >
+    <div v-if="show">
+      <p>请输入当前期号，形如"2023年第21期"</p>
+      <input v-model="user_input">
+      <button v-on:click="submit">确认</button>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -11,18 +17,23 @@ import axios from 'axios';
 export default {
   name: "App",
   data() {
+    const url = window.location.href
     return {
-      api_endpoint: 'https://9966df427a59473692f15d799442f2ce.apig.ap-southeast-3.huaweicloudapis.com/qndxx',
-      title: "正在请求数据...",
-      dxx: '正在获取图片...'
+      api_endpoint: url.split('?')[0] + '/.netlify/functions/qndxx',
+      title: '请在弹窗中输入标题',
+      result: 'https://www.example.com',
+      show: true
     };
   },
   mounted() {
     axios
       .get(this.api_endpoint)
       .then((resp) => {
-        this.title = resp.data.title
-        this.dxx = resp.data.dxx_img
+        if (this.$route.query.id) {
+          this.title = '“青年大学习”' + this.$route.query.id
+          this.show = false
+        }
+        this.result = resp.data.result
       })
       .catch((err) => {
         console.log(err)
@@ -37,6 +48,12 @@ export default {
       },
     };
   },
+  methods: {
+    submit: function () {
+      this.title = '"青年大学习"' + this.user_input
+      this.show = false
+    }
+  }
 };
 </script>
 
