@@ -1,7 +1,6 @@
 # 青年大学习skip
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/93a7e121-af8d-46d0-9019-32b69ba447d6/deploy-status)](https://app.netlify.com/sites/qndxx/deploys)
-[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/hx-w/qndxx)](https://vercel.com/hx-w/qndxx)
 
 **该项目旨在应付每周学生的青年大学习检查，以便节省你一周大约10分钟的时间和1%的手机电量。**
 
@@ -15,15 +14,28 @@
 2. 在微信中点开指定链接
 3. 截图
 
+<table>
+<tr>
+<tl>
+![state_1](https://imgbed.scubot.com/image/c1b95e78c6dd48fd53abcd245360f691.jpg)
+</tl>
+<tl>
+![state_2](https://imgbed.scubot.com/image/93577d4483f9729873d93c4318303247.jpg)
+</tl>
+</tr>
+</table>
+
 > 站点部署在netlify平台上，第一次访问速度会较慢请耐心等待。
 
 ## 站点 | Website
 
-目前暂时需要手动在url参数中输入最新一期的标题，相关进度跟进见 [Issue#13](https://github.com/hx-w/qndxx/issues/13)
+本仓库完全部署于[**Netlify**](https://app.netlify.com/sites/qndxx/overview)（包括前端和云函数）。
 
-- [x] [**qndxx.scubot.com?id=2023年第18期**](https://qndxx.scubot.com?id=2023年第18期)
+由于青年大学习网站屏蔽了来自Netlify云函数的请求，所以**无法自动获得最新一期的标题，需要手动输入**。
+
+
+- [x] [**qndxx.scubot.com**](https://qndxx.scubot.com)
 - [ ] [**qndxx.netlify.app**](https://qndxx.netlify.app)
-- [ ] [**qndxx-skip.vercel.app**](https://qndxx-skip.vercel.app)
 - [ ] [**dxx.haha44444.top**](https://dxx.haha44444.top)
 - [ ] [**dxx.txt1482.ltd**](https://dxx.txt1482.ltd)
 
@@ -32,16 +44,7 @@
 
 ## 部署 | Deploy
 
-如果你想自己部署一个该项目（~虽然没啥必要~），那么我建议从以下几个方式选择。
-
-**Vercel**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhx-w%2Fqndxx&project-name=qndxx&repository-name=qndxx)
-
-1. Vercel的管理站点与部署后的站点在国内都不能直连，确定继续的话就点击上面的按钮
-2. 将 `Settings >> Git >> Production Branch` 设为 `prod-vercel`
-3. 将 `Settings >> General >> Node.js Version` 设为 `16.x`
-4. 在 `Deployments` 下选取最近的部署记录，进行Redeploy
+如果你想自己部署一个该项目（~虽然没啥必要~），点击下面的按钮即可。
 
 **Netlify**
 
